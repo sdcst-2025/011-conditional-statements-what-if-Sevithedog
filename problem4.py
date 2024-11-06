@@ -33,3 +33,22 @@ that is an obtuse triangle
 
 
 """
+a = float(input("Enter a variable"))
+b = float(input("Enter a variable"))
+c = float(input("Enter a variable"))
+h = float()
+l1 = float()
+l2 = float()
+if a > b and c:
+    a = h
+    b = l1
+    c = l2
+elif b > a and c:
+    b = h
+    a = l1
+    c = l2
+elif c > a and b:
+    c = h
+    a = l1
+    b = l2
+
