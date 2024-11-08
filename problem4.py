@@ -33,22 +33,30 @@ that is an obtuse triangle
 
 
 """
+import math
 a = float(input("Enter a variable"))
 b = float(input("Enter a variable"))
 c = float(input("Enter a variable"))
-h = float()
-l1 = float()
-l2 = float()
-if a > b and c:
-    a = h
-    b = l1
-    c = l2
-elif b > a and c:
-    b = h
-    a = l1
-    c = l2
-elif c > a and b:
-    c = h
-    a = l1
-    b = l2
-
+if a > b and a> c:
+    h = a
+    l1 = b
+    l2 = c
+elif b > a and b > c:
+    h = b
+    l1 = a
+    l2 = c
+elif c > a and c > b:
+    h = c
+    l1 = a
+    l2 = b
+#print(f"{h},{l1},{l2}")
+lower = h-(h*0.02)
+upper = h+(h*0.02)
+value = l1**2 + l2**2
+#print(f"{lower},{value},{upper}")
+if lower**2 < value < upper**2:
+    print("That is a right triangle")
+elif value > h**2:
+    print("That is an obtuse triangle")
+elif value < h**2:
+    print("That is an acute triangle")

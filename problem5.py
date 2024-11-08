@@ -29,3 +29,15 @@ Enter c: 8
 the equation can not be factored
 
 """
+import math
+a = float(input("Enter a value: "))
+b = float(input("Enter a value: "))
+c = float(input("Enter a value: "))
+value = b**2 - 4*a*c
+value =int(value)
+if value < 0:
+    print("The equation cannot be factored")
+elif (value)**(1/2) ==  math.floor((value)**(1/2)):
+    print("The equation can be factored")
+else:
+    print("The equation cannot be factored")
